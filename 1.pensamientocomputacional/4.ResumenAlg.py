@@ -59,4 +59,5 @@ def menu():
     
     print(f'La respuesta para el tipo de algoritmo que elegiste es {respuesta}')
 
-menu()
+if __name__ == '__main__':
+    menu()

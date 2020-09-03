@@ -14,5 +14,6 @@ def primera_letra(lista_de_palabras):
     except AssertionError:
         return None
 
-paises = ['colombia', 'mexico', 'Chile', 'Argentina']    #['Colombia', '', 'Chile', 45]
-print(primera_letra(paises))
+if __name__ == '__main__':
+    paises = ['Colombia', 'Mexico', 'Chile', 'Argentina']    #['Colombia', '', 'Chile', 45]
+    print(primera_letra(paises))

@@ -28,7 +28,7 @@ def simular_caminata(pasos, numero_de_intentos, tipo_de_borracho):
 
 def graficar(x, y):
     grafica = figure(title='Camino aleatorio', x_axis_label='pasos', y_axis_label='distancia')
-    grafica.line(x, y, legend='distancia media')
+    grafica.line(x, y, legend_label='distancia media')
 
     show(grafica)
 
@@ -51,7 +51,7 @@ def main(distancias_de_caminata, numero_de_intentos, tipo_de_borracho):
 if __name__ == "__main__": #Entry point
     distancias_de_caminata = [10, 100, 1000, 10000] #simulacion de 10 pasos, 100 pasos, ... , 
     numero_de_intentos = 100           #las simulaciones se corren varias veces para obtener su media.
-
+    
     main(distancias_de_caminata, numero_de_intentos, BorrachoTradicional)   # Recibe clase de borracho, en vez inizializar la clase la vamos a poner como referencia
     
 

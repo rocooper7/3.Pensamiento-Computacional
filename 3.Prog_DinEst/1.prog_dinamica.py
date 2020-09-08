@@ -3,14 +3,14 @@ import sys
 # Algoritmo de fibonacci aplicando unicamente recursión
 def fibonacci_recursivo(n):
     if n == 0 or n == 1:
-        return 1
+        return n
     
     return fibonacci_recursivo(n - 1) + fibonacci_recursivo(n - 2)
 
 # Algoritmo de fibonacci aplicando recursión y memorización
 def fibonacci_dinamico(n, memo = {}):
     if n == 0 or n == 1:
-        return 1
+        return n
     
     # Aplico memorización
     try:
@@ -18,7 +18,7 @@ def fibonacci_dinamico(n, memo = {}):
     except KeyError:
         resultado = fibonacci_dinamico(n - 1, memo) + fibonacci_dinamico(n - 2, memo)
         memo[n] = resultado
-    #print(f'{n},{resultado},{memo}')
+        print(f'Llave: {n}, Valor: {resultado}, Dict: {memo}')
     return resultado
 
 

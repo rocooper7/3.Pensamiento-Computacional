@@ -155,9 +155,9 @@ def probabilidad_escalera(tamaño_mano, intentos):
 
     
     probabilidad_escalera = cantidad_escaleras / intentos
-    print(f'La probabilidad de encontrar una escalera en {intentos} intentos es {probabilidad_escalera}')
+    print(f'La probabilidad de encontrar una escalera en {tamaño_mano} cartas es {probabilidad_escalera}')
     probabilidad_escalera_mismo_palo = cantidad_escaleras_mismo_palo / intentos
-    print(f'La probabilidad de encontrar una escalera del mismo palo en {intentos} intentos es {probabilidad_escalera_mismo_palo}')
+    print(f'La probabilidad de encontrar una escalera del mismo palo en {tamaño_mano} cartas es {probabilidad_escalera_mismo_palo}')
 
 
 if __name__ == '__main__':

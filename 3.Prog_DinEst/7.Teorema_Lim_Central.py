@@ -16,7 +16,7 @@ def tirar_dado(numero_de_tiros):
 
 def graficar(x,y):
     grafica=figure(title='Distribucion normal',x_axis_label='sigma',y_axis_label='valores')
-    grafica.vbar(x,top=y ,width = 0.8,legend='Distribucion normal')
+    grafica.vbar(x,top=y ,width = 0.8,legend_label='Distribucion normal')
     show(grafica)
 
 
@@ -27,10 +27,12 @@ def main(numero_de_tiros,numero_de_intentos):
     
     for _ in range(numero_de_intentos):
         secuencia_de_tiros=tirar_dado(numero_de_tiros)
+        # print(secuencia_de_tiros)
         X.append(media(secuencia_de_tiros)) #Añadimos la secuencia al arreglod e tiros
+    # print(X)    
 
- 
     counter = dict(collections.Counter(X))
+    # print(counter)
  
     x=list(counter.keys()) #Para X iran las letras es decir, sigma1 sigma 2 etc
  

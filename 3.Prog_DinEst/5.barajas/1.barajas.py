@@ -33,7 +33,7 @@ def main(tamano_mano, intentos):
         #print(valores)
         counter = dict(collections.Counter(valores))
         for val in counter.values():
-            if val == 3:
+            if val == 2:
                 pares += 1
                 break
 

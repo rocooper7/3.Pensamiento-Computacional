@@ -10,7 +10,7 @@ def varianza(X):
     acumulador = 0
     for x in X:
         acumulador += (x - mu)**2
-        print(acumulador)
+        # print(acumulador)
     
     return acumulador / len(X)
 
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     Var = varianza(X)
     sigma = desviacion_estandar(X)
 
-    print(f'Arregla X: {X}')
+    print(f'Arreglo X: {X}')
     print(f'Media = {mu}')
     print(f'Varianza = {Var}')
     print(f'Desviacion estandar = {sigma}')

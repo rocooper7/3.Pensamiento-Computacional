@@ -35,8 +35,11 @@ def estimar_pi(precision, numero_de_intentos):
     while sigma >= precision / 1.96:   #Desviaciones 
         media, sigma = estimacion(numero_de_agujas, numero_de_intentos)
         numero_de_agujas *= 2
-
+        # print(f'sigma:{sigma}, Dato:{precision/1.96}')
     return media
 
 if __name__ == '__main__':
-    estimar_pi(0.01, 1000)
+    precision = 0.01
+    intentos = 10
+
+    print(estimar_pi(precision, intentos))
